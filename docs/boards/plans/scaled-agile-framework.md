@@ -14,7 +14,7 @@ ms.date: 07/22/2017
 ---
 
 
-# Implement Scaled Agile Framework&reg; to support epics, release trains, and multiple backlogs  
+# Implement Scaled Agile Framework&reg; to Support Epics, Release Trains, and Multiple Backlogs  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
