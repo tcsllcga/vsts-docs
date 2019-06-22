@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 06/12/2019
+ms.date: 06/20/2019
 monikerRange: 'azure-devops'
 ---
 # Add a group rule to assign access levels and extensions
@@ -20,10 +20,13 @@ Azure DevOps includes group-based licensing for Azure Active Directory (Azure AD
 
 When users leave the group, the licenses are freed and returned to your pool. You don't need to automate license management to reflect changes in your organizational structure on a per-user basis.
 
+> [!NOTE]
+> We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization. Automated reevaluation occurs every six hours and any time the group rule changes.
+
 ## Prerequisites
 
 To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the organization. If you're not a member of the **Project Collection Administrators** group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
-To assign an extension to a user (and consequently, a group) a PCA must first [install the extension on the organization](../../marketplace/install-extension.md).
+To assign an extension to a user (and consequently, a group) a PCA must first [install the extension](../../marketplace/install-extension.md) on the organization.
 
 ## Add group rule
 
@@ -84,9 +87,9 @@ When the same access level or extension is assigned to the user both directly an
 
 - Verify that no assignments have failed. On the **Users** page, on the **Groups** tab, check for assignment errors.
 
-Your group rule is in effect. We recommend that you reevaluate rules regularly on the **Group** rules tab of the **Users** page. Clarify whether any group membership changes in Azure AD might affect your organization.
+Your group rule is in effect.
 
 ## Related articles
 
-* [Buy and install paid extensions](../../marketplace/install-paid-extension.md)
+* [Buy and install extensions](../../marketplace/install-extension.md)
 * [Install Active Directory and Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)
